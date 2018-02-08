@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
+        <!--Расписание-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Расписание" id="BYZ-38-t0r" customClass="MenuViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fSo-Pf-HG7"/>
+                    <navigationItem key="navigationItem" title="Расписание" id="fSo-Pf-HG7">
+                        <barButtonItem key="backBarButtonItem" title="   " id="miQ-VR-63m"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,6 +296,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fGb-EN-XUF"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Расписание групп" largeTitleDisplayMode="never" id="tE2-jZ-vX7">
+                        <barButtonItem key="backBarButtonItem" title="   " id="I7Z-nS-oIV"/>
+                        <barButtonItem key="rightBarButtonItem" image="save-60" style="done" id="3RV-mg-f7U">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveSchedule:" destination="PeL-PF-RYJ" id="bhe-qV-w8v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="headerView" destination="sMo-ta-Gkb" id="Lva-Jm-o1G"/>
                         <outlet property="tableView" destination="9Fo-AI-Ljj" id="jRg-Kx-KcW"/>
@@ -312,7 +323,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djz-FB-ZmH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleAspectFit" id="b7f-wR-gjr" customClass="LectorsHeader" customModule="OmGTU" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
@@ -451,6 +462,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oPK-Ue-UyY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="headerView" destination="b7f-wR-gjr" id="HZx-jP-3a8"/>
                         <outlet property="tableView" destination="djz-FB-ZmH" id="NTc-nf-U4w"/>
@@ -527,6 +540,7 @@
     </scenes>
     <resources>
         <image name="omgtu_logo" width="800" height="757"/>
+        <image name="save-60" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h4Q-nK-Jmy"/>

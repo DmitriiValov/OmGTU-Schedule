@@ -212,7 +212,7 @@ class RequestsEngine {
             dayString = String(dayString.prefix(upTo: (endIndexRange?.lowerBound)!))
 
             let day:Day = Day()
-            day.title = dayString
+            day.dayTitle = dayString
             days.append(day)
         }
         else {
@@ -224,7 +224,7 @@ class RequestsEngine {
                     _dayString = String(_dayString.prefix(upTo: (endIndexRange?.lowerBound)!))
                     
                     let day:Day = Day()
-                    day.title = _dayString
+                    day.dayTitle = _dayString
                     days.append(day)
                 }
                 else {
@@ -237,7 +237,7 @@ class RequestsEngine {
                             let  endLectureIndexRange = lectureString.range(of: "</td><tr></thead><tbody>")
                             var _lectureString = String(lectureString.prefix(upTo: (endLectureIndexRange?.lowerBound)!))
                             _lectureString = _lectureString.replacingOccurrences(of: ",", with: ", ")
-                            day.title = _lectureString
+                            day.dayTitle = _lectureString
                         }
                         else {
                             let pairs = lectureString.components(separatedBy: SCHEDULE_SEPARATOR)
@@ -255,7 +255,8 @@ class RequestsEngine {
                                     pairTimeAndName.time = _pair
                                 }
                             }
-                            day.lessons.append(pairTimeAndName)
+                            day.dayLessons.append(pairTimeAndName.name)
+                            day.dayTimes.append(pairTimeAndName.time)
                         }
                     }
                 }

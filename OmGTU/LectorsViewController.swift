@@ -20,7 +20,7 @@ class LectorsViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
 
         let day = Day()
-        day.title = "Нет значений"
+        day.dayTitle = "Нет значений"
         days.append(day)
         
         tableView.dataSource = self
@@ -43,7 +43,7 @@ class LectorsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.days[section].title
+        return self.days[section].dayTitle
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -62,19 +62,19 @@ class LectorsViewController: UIViewController, UITableViewDataSource, UITableVie
             label.font = UIFont.boldSystemFont(ofSize: 13)
         }
         
-        label.text = self.days[section].title
+        label.text = self.days[section].dayTitle
         view.addSubview(label)
         return view
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.days[section].lessons.count
+        return self.days[section].dayLessons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: LectureTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "CellID") as! LectureTableViewCell
-        cell.timeLabel.text = self.days[indexPath.section].lessons[indexPath.row].0
-        cell.nameLabel.text = self.days[indexPath.section].lessons[indexPath.row].1
+        cell.timeLabel.text = self.days[indexPath.section].dayTimes[indexPath.row]
+        cell.nameLabel.text = self.days[indexPath.section].dayLessons[indexPath.row]
         return cell
     }
     

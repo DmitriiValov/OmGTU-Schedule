@@ -12,6 +12,16 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerView: GroupsHeader!
+
+    @IBAction func saveSchedule(_ sender: UIBarButtonItem) {
+        if days.count > 0 {
+            let placesData = NSKeyedArchiver.archivedData(withRootObject: days)
+            UserDefaults.standard.set(placesData, forKey: UserDefaultsKeys.mySchedule.rawValue)
+        }
+        else {
+            
+        }
+    }
     
     var days:Array<Day> = []
     let SectionHeaderHeight: CGFloat = 25
@@ -20,7 +30,7 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         let day = Day()
-        day.title = "нет значений"
+        day.dayTitle = "нет значений"
         days.append(day)
         
         tableView.dataSource = self
@@ -43,7 +53,7 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.days[section].title
+        return self.days[section].dayTitle
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -62,19 +72,19 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
             label.font = UIFont.boldSystemFont(ofSize: 13)
         }
         
-        label.text = self.days[section].title
+        label.text = self.days[section].dayTitle
         view.addSubview(label)
         return view
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.days[section].lessons.count
+        return self.days[section].dayLessons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: LectureTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "CellID") as! LectureTableViewCell
-        cell.timeLabel.text = self.days[indexPath.section].lessons[indexPath.row].0
-        cell.nameLabel.text = self.days[indexPath.section].lessons[indexPath.row].1
+        cell.timeLabel.text = self.days[indexPath.section].dayTimes[indexPath.row]
+        cell.nameLabel.text = self.days[indexPath.section].dayLessons[indexPath.row]
         return cell
     }
     
