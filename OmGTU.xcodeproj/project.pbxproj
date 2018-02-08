@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14DC47B202CBA2200244B9E /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14DC47A202CBA2200244B9E /* MyScheduleViewController.swift */; };
 		D16B57E020245145007C0B16 /* LectorsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57DF20245145007C0B16 /* LectorsHeader.swift */; };
 		D16B57E22029BB6C007C0B16 /* LectorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */; };
 		D16B57E4202AEF76007C0B16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57E3202AEF76007C0B16 /* Constants.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D14DC47A202CBA2200244B9E /* MyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
 		D16B57DF20245145007C0B16 /* LectorsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorsHeader.swift; sourceTree = "<group>"; };
 		D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorsViewController.swift; sourceTree = "<group>"; };
 		D16B57E3202AEF76007C0B16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		D1DDF38A2018604200E27D33 /* OmGTU */ = {
 			isa = PBXGroup;
 			children = (
+				D14DC47A202CBA2200244B9E /* MyScheduleViewController.swift */,
 				D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */,
 				D16B57DF20245145007C0B16 /* LectorsHeader.swift */,
 				D1DDF3BD201860CF00E27D33 /* GroupsViewController.swift */,
@@ -405,6 +408,7 @@
 				D1BF7C1520207232004799EA /* LectureTableViewCell.swift in Sources */,
 				D1DDF3BE201860CF00E27D33 /* RequestsEngine.swift in Sources */,
 				D1BF7C13202044BB004799EA /* TableHeaderView+AutoLayout.swift in Sources */,
+				D14DC47B202CBA2200244B9E /* MyScheduleViewController.swift in Sources */,
 				D1BF7C432020DBC4004799EA /* FSCalendarConstants.m in Sources */,
 				D1BF7C462020DBC4004799EA /* FSCalendarTransitionCoordinator.m in Sources */,
 				D1BF7C3E2020DBC4004799EA /* FSCalendarCollectionViewLayout.m in Sources */,

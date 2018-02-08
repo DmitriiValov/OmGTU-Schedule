@@ -73,6 +73,9 @@
                                         <variation key="widthClass=regular">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         </variation>
+                                        <connections>
+                                            <segue destination="2ke-Ja-5lY" kind="show" id="oQV-oR-4nF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qju-I6-gef">
                                         <rect key="frame" x="0.0" y="150.5" width="315" height="30"/>
@@ -536,6 +539,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vA-d2-BjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1279" y="132"/>
+        </scene>
+        <!--Расписание преподавателей-->
+        <scene sceneID="3Eg-es-kr5">
+            <objects>
+                <viewController title="Расписание преподавателей" id="2ke-Ja-5lY" customClass="MyScheduleViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gA0-9W-8G4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SlI-ro-S65">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" rowHeight="76" id="cXY-1M-QvI" customClass="LectureTableViewCell" customModule="OmGTU" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cXY-1M-QvI" id="34z-qa-YSa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4xG-iu-cxT">
+                                                    <rect key="frame" x="15" y="11" width="345" height="54"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="13:45 - 14:30" textAlignment="center" lineBreakMode="wordWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ugx-C8-vJA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="54"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="hlt-up-f82"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="di6-h7-OIq">
+                                                            <rect key="frame" x="88" y="0.0" width="257" height="54"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4xG-iu-cxT" firstAttribute="top" secondItem="34z-qa-YSa" secondAttribute="topMargin" id="Cfd-cJ-qYD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4xG-iu-cxT" secondAttribute="trailing" id="bwa-55-FS7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4xG-iu-cxT" secondAttribute="bottom" id="bxR-kW-Vsy"/>
+                                                <constraint firstItem="4xG-iu-cxT" firstAttribute="leading" secondItem="34z-qa-YSa" secondAttribute="leadingMargin" id="dlp-ru-6ZN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="di6-h7-OIq" id="h5y-qT-XPP"/>
+                                            <outlet property="timeLabel" destination="Ugx-C8-vJA" id="hba-fK-SFM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lMk-Qp-o3i" firstAttribute="trailing" secondItem="SlI-ro-S65" secondAttribute="trailing" id="PcH-lb-smd"/>
+                            <constraint firstItem="SlI-ro-S65" firstAttribute="leading" secondItem="lMk-Qp-o3i" secondAttribute="leading" id="jtN-kk-3e1"/>
+                            <constraint firstItem="lMk-Qp-o3i" firstAttribute="bottom" secondItem="SlI-ro-S65" secondAttribute="bottom" id="veQ-OC-EbF"/>
+                            <constraint firstItem="SlI-ro-S65" firstAttribute="top" secondItem="gA0-9W-8G4" secondAttribute="top" id="xVL-Bu-nTS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lMk-Qp-o3i"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="SlI-ro-S65" id="FFR-ak-GC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAp-V6-hVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-663" y="962"/>
         </scene>
     </scenes>
     <resources>
