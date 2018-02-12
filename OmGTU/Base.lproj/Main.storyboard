@@ -477,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fz9-ui-6zJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293.60000000000002" y="903.59820089955031"/>
+            <point key="canvasLocation" x="140" y="960"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GXv-Xa-DH0">
@@ -486,13 +486,31 @@
                     <view key="view" contentMode="scaleToFill" id="0KU-zZ-8c4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заметка на Понедельник, 16.10.2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-59-uP4">
+                                <rect key="frame" x="10" y="10" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-r3-FZQ">
+                                <rect key="frame" x="164" y="637" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZKA-59-uP4" firstAttribute="leading" secondItem="0KU-zZ-8c4" secondAttribute="leading" constant="10" id="Ei4-Yc-xTd"/>
+                            <constraint firstItem="ZKA-59-uP4" firstAttribute="top" secondItem="0KU-zZ-8c4" secondAttribute="top" constant="10" id="j0U-lB-qRM"/>
+                            <constraint firstAttribute="trailing" secondItem="ZKA-59-uP4" secondAttribute="trailing" constant="10" id="vmO-7G-qAL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sib-9s-wJE"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DO7-mX-dfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-83" y="1667"/>
+            <point key="canvasLocation" x="-663" y="1706"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="M0a-m0-Af3">
@@ -538,7 +556,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpS-F3-XX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4Eg-k7-t1E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="975" y="131"/>
+            <point key="canvasLocation" x="1055" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YNp-B1-QlR">
@@ -556,7 +574,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vA-d2-BjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1279" y="132"/>
+            <point key="canvasLocation" x="-1351" y="131"/>
         </scene>
         <!--Расписание преподавателей-->
         <scene sceneID="3Eg-es-kr5">
@@ -626,6 +644,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="SlI-ro-S65" id="FFR-ak-GC0"/>
+                        <segue destination="B5S-Ow-EQi" kind="show" identifier="addNoteSegue" id="Lq6-ka-Dcl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAp-V6-hVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -654,17 +673,8 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-Hu-Exs">
                                                     <rect key="frame" x="15" y="11" width="345" height="54"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="13:45 - 14:30" textAlignment="center" lineBreakMode="wordWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-n1-hHS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="54"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="zMT-L0-SVh"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-hA-PlJ">
-                                                            <rect key="frame" x="88" y="0.0" width="257" height="54"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="54"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -681,7 +691,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="zLK-hA-PlJ" id="ICO-pH-hMj"/>
-                                            <outlet property="timeLabel" destination="A2s-n1-hHS" id="zga-SG-hfF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -701,7 +710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DB2-7t-RzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1586" y="961"/>
+            <point key="canvasLocation" x="-1457" y="959"/>
         </scene>
     </scenes>
     <resources>
@@ -709,6 +718,6 @@
         <image name="save-60" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="h4Q-nK-Jmy"/>
+        <segue reference="21x-kA-N1L"/>
     </inferredMetricsTieBreakers>
 </document>

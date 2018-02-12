@@ -61,6 +61,9 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
             let button = UIButton(frame: CGRect(x: tableView.bounds.width - 30, y: (SectionHeaderHeight - 20) / 2 + 1, width: 20, height: 20))
             button.titleLabel?.text = ""
             button.setImage(UIImage(named:"edit"), for: .normal)
+            button.tag = section
+            button.addTarget(self, action: #selector(self.addNote(sender:)), for: .touchUpInside)
+            
             view.addSubview(button)
         }
         
@@ -68,6 +71,10 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
         view.addSubview(label)
         
         return view
+    }
+    
+    @objc func addNote(sender: UIButton!) {
+        print("test " + String(sender.tag))
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
