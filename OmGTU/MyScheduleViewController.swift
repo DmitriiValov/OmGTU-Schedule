@@ -75,6 +75,7 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
     
     @objc func addNote(sender: UIButton!) {
         print("test " + String(sender.tag))
+        performSegue(withIdentifier: "addNoteSegue", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

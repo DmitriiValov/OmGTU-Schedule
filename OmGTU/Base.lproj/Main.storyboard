@@ -488,7 +488,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заметка на Понедельник, 16.10.2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-59-uP4">
-                                <rect key="frame" x="10" y="10" width="355" height="21"/>
+                                <rect key="frame" x="10" y="74" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -502,7 +502,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZKA-59-uP4" firstAttribute="leading" secondItem="0KU-zZ-8c4" secondAttribute="leading" constant="10" id="Ei4-Yc-xTd"/>
-                            <constraint firstItem="ZKA-59-uP4" firstAttribute="top" secondItem="0KU-zZ-8c4" secondAttribute="top" constant="10" id="j0U-lB-qRM"/>
+                            <constraint firstItem="ZKA-59-uP4" firstAttribute="top" secondItem="sib-9s-wJE" secondAttribute="top" constant="10" id="j0U-lB-qRM"/>
                             <constraint firstAttribute="trailing" secondItem="ZKA-59-uP4" secondAttribute="trailing" constant="10" id="vmO-7G-qAL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sib-9s-wJE"/>
@@ -576,10 +576,10 @@
             </objects>
             <point key="canvasLocation" x="-1351" y="131"/>
         </scene>
-        <!--Расписание преподавателей-->
+        <!--Мое расписание-->
         <scene sceneID="3Eg-es-kr5">
             <objects>
-                <viewController title="Расписание преподавателей" id="2ke-Ja-5lY" customClass="MyScheduleViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Мое расписание" id="2ke-Ja-5lY" customClass="MyScheduleViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gA0-9W-8G4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -651,10 +651,10 @@
             </objects>
             <point key="canvasLocation" x="-663" y="962"/>
         </scene>
-        <!--Расписание преподавателей-->
+        <!--Мои заметки-->
         <scene sceneID="nma-fD-1a8">
             <objects>
-                <viewController title="Расписание преподавателей" id="Pot-MK-bVY" customClass="MyScheduleViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Мои заметки" id="Pot-MK-bVY" customClass="MyNotesViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MCc-0c-w3d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -663,7 +663,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" rowHeight="76" id="Ziu-lt-dbd" customClass="LectureTableViewCell" customModule="OmGTU" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" rowHeight="76" id="Ziu-lt-dbd" customClass="NoteTableViewCell" customModule="OmGTU" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ziu-lt-dbd" id="ifQ-2g-ZST">
@@ -673,7 +673,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-Hu-Exs">
                                                     <rect key="frame" x="15" y="11" width="345" height="54"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-hA-PlJ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-hA-PlJ" userLabel="Note Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="345" height="54"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
@@ -691,6 +691,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="zLK-hA-PlJ" id="ICO-pH-hMj"/>
+                                            <outlet property="noteLabel" destination="zLK-hA-PlJ" id="IT7-ek-Q0p"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -707,6 +708,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="p0k-PN-mzl" id="qzB-vd-o4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DB2-7t-RzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -718,6 +722,6 @@
         <image name="save-60" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="21x-kA-N1L"/>
+        <segue reference="h4Q-nK-Jmy"/>
     </inferredMetricsTieBreakers>
 </document>
