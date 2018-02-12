@@ -57,10 +57,16 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
             label.textColor = UIColor.black
             view.backgroundColor = UIColor(red: 253.0/255.0, green: 240.0/255.0, blue: 196.0/255.0, alpha: 1)
             label.font = UIFont.boldSystemFont(ofSize: 13)
+            
+            let button = UIButton(frame: CGRect(x: tableView.bounds.width - 30, y: (SectionHeaderHeight - 20) / 2 + 1, width: 20, height: 20))
+            button.titleLabel?.text = ""
+            button.setImage(UIImage(named:"edit"), for: .normal)
+            view.addSubview(button)
         }
         
         label.text = self.days[section].dayTitle
         view.addSubview(label)
+        
         return view
     }
     

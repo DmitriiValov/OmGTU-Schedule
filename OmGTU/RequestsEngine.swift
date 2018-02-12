@@ -17,7 +17,7 @@ class RequestsEngine {
     let SCHEDULE_SEPARATOR = "</td><td class=\"schdaybody\" style=\"width:90%;\">"
     let LESSON_HTML_TAGS = "</td></tr></tbody>"
     
-    let baseURL = "http://www.omgtu.ru/students/temp/ajax.php?"
+    let baseURL = "https://www.omgtu.ru/students/temp/ajax.php?"
     let scheduleURL = "action=get_schedule"
     let groupsURL = "action=get_groups"
     let lectorsURL = "action=get_lecturers&letter="
