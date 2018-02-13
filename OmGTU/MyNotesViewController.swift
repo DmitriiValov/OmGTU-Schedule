@@ -12,8 +12,8 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    var captions:Array<String> = []
-    var notes:Array<String> = []
+    var captions:Array<String> = ["Понедельник, 15 января", "Понедельник, 16 января", "Понедельник, 17 января"]
+    var notes:Array<String> = ["1", "2", "3"]
     let SectionHeaderHeight: CGFloat = 25
 
     override func viewDidLoad() {
@@ -22,17 +22,17 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         
-        guard let placesData = UserDefaults.standard.object(forKey: UserDefaultsKeys.mySchedule.rawValue) as? NSData else {
-            print("'\(UserDefaultsKeys.mySchedule.rawValue)' not found in UserDefaults")
-            return
-        }
-        
-        guard let _notes = NSKeyedUnarchiver.unarchiveObject(with: placesData as Data) as? [String] else {
-            print("Could not unarchive from placesData")
-            return
-        }
-        
-        notes = _notes
+//        guard let placesData = UserDefaults.standard.object(forKey: UserDefaultsKeys.mySchedule.rawValue) as? NSData else {
+//            print("'\(UserDefaultsKeys.mySchedule.rawValue)' not found in UserDefaults")
+//            return
+//        }
+//        
+//        guard let _notes = NSKeyedUnarchiver.unarchiveObject(with: placesData as Data) as? [String] else {
+//            print("Could not unarchive from placesData")
+//            return
+//        }
+//        
+//        notes = _notes
     }
     
     //MARK: UITableViewDataSource    
@@ -50,8 +50,8 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: LectureTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "CellID") as! LectureTableViewCell
-//        cell.nameLabel.text = self.days[indexPath.section].dayLessons[indexPath.row]
+        let cell: NoteTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "NoteCellID") as! NoteTableViewCell
+        cell.noteLabel.text = self.captions[indexPath.row]
         return cell
     }
     
