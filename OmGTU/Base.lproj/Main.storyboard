@@ -479,10 +479,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="960"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Note View Controller-->
         <scene sceneID="GXv-Xa-DH0">
             <objects>
-                <viewController id="B5S-Ow-EQi" sceneMemberID="viewController">
+                <viewController id="B5S-Ow-EQi" customClass="EditNoteViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0KU-zZ-8c4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,6 +507,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sib-9s-wJE"/>
                     </view>
+                    <connections>
+                        <outlet property="noteCaptionLabel" destination="ZKA-59-uP4" id="tbU-Of-Nt8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DO7-mX-dfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -709,6 +712,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="p0k-PN-mzl" id="qzB-vd-o4D"/>
+                        <segue destination="B5S-Ow-EQi" kind="show" identifier="EditNoteSegue" id="MOc-kX-EpA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DB2-7t-RzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -722,5 +726,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h4Q-nK-Jmy"/>
+        <segue reference="MOc-kX-EpA"/>
     </inferredMetricsTieBreakers>
 </document>

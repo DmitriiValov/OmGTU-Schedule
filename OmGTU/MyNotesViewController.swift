@@ -12,8 +12,7 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    var captions:Array<String> = ["Понедельник, 15 января", "Понедельник, 16 января", "Понедельник, 17 января"]
-    var notes:Array<String> = ["1", "2", "3"]
+    var notes:Dictionary<String, String> = ["Понедельник, 15 января":"1", "Понедельник, 16 января":"2", "Понедельник, 17 января":"3"]
     let SectionHeaderHeight: CGFloat = 25
 
     override func viewDidLoad() {
@@ -51,12 +50,28 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: NoteTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "NoteCellID") as! NoteTableViewCell
-        cell.noteLabel.text = self.captions[indexPath.row]
+        let dictKeys  = Array(self.notes.keys)
+        cell.noteLabel.text = dictKeys[indexPath.row]
         return cell
     }
     
-    // MARK: - Navigation
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "EditNoteSegue", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EditNoteSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let dictKeys  = Array(self.notes.keys)
+                let enc = segue.destination as! EditNoteViewController
+                enc.captionText = dictKeys[indexPath.row]
+            }
+        }
+    }
+
+    // MARK: - Navigation
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
     }
 }

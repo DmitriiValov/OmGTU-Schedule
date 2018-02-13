@@ -43,6 +43,7 @@
 		D1DDF3AF2018604200E27D33 /* OmGTUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3AE2018604200E27D33 /* OmGTUUITests.swift */; };
 		D1DDF3BE201860CF00E27D33 /* RequestsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3BC201860CE00E27D33 /* RequestsEngine.swift */; };
 		D1DDF3BF201860CF00E27D33 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3BD201860CF00E27D33 /* GroupsViewController.swift */; };
+		D1F060832032AFCC00E24107 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F060822032AFCC00E24107 /* EditNoteViewController.swift */; };
 		EE53BF512031901600537646 /* MyNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53BF502031901600537646 /* MyNotesViewController.swift */; };
 		EE53BF53203193EB00537646 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53BF52203193EA00537646 /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		D1DDF3B02018604200E27D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DDF3BC201860CE00E27D33 /* RequestsEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsEngine.swift; sourceTree = "<group>"; };
 		D1DDF3BD201860CF00E27D33 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		D1F060822032AFCC00E24107 /* EditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
 		EE53BF502031901600537646 /* MyNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNotesViewController.swift; sourceTree = "<group>"; };
 		EE53BF52203193EA00537646 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +219,7 @@
 		D1DDF38A2018604200E27D33 /* OmGTU */ = {
 			isa = PBXGroup;
 			children = (
+				D1F060822032AFCC00E24107 /* EditNoteViewController.swift */,
 				EE53BF502031901600537646 /* MyNotesViewController.swift */,
 				EE53BF52203193EA00537646 /* NoteTableViewCell.swift */,
 				D14DC47A202CBA2200244B9E /* MyScheduleViewController.swift */,
@@ -407,6 +410,7 @@
 				D1BF7C452020DBC4004799EA /* FSCalendarHeaderView.m in Sources */,
 				D1BF7C3C2020DBC4004799EA /* FSCalendarStickyHeader.m in Sources */,
 				D1BF7C422020DBC4004799EA /* FSCalendar+Deprecated.m in Sources */,
+				D1F060832032AFCC00E24107 /* EditNoteViewController.swift in Sources */,
 				D1BF7C482020DBC4004799EA /* FSCalendarAppearance.m in Sources */,
 				D16B57E4202AEF76007C0B16 /* Constants.swift in Sources */,
 				D1DDF38E2018604200E27D33 /* MenuViewController.swift in Sources */,
