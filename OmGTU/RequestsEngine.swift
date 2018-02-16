@@ -57,8 +57,10 @@ class RequestsEngine {
     
     func getLectors(letter: String, completion: @escaping (Array<(Int, String)>?) -> ()) {
 //    http://www.omgtu.ru/students/temp/ajax.php?action=get_lecturers&letter=%C4
-        let _letter = "%C4"
-        if let url = URL(string: baseURL + lectorsURL + _letter) {
+//        let _letter = "%C4"
+        let _letter = letter.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
+        let urlString = baseURL + lectorsURL + _letter!
+        if let url = URL(string: urlString) {
             var request = URLRequest(url: url)
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
             request.setValue("application/json", forHTTPHeaderField: "Accept")

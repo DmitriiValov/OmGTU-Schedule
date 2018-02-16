@@ -11,6 +11,7 @@
 		D16B57E020245145007C0B16 /* LectorsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57DF20245145007C0B16 /* LectorsHeader.swift */; };
 		D16B57E22029BB6C007C0B16 /* LectorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */; };
 		D16B57E4202AEF76007C0B16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57E3202AEF76007C0B16 /* Constants.swift */; };
+		D19E1F6D2035951F00260AED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1F6C2035951F00260AED /* Utils.swift */; };
 		D1BF7C07201F2ADD004799EA /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF7C06201F2ADD004799EA /* Day.swift */; };
 		D1BF7C0F20202E72004799EA /* GroupsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF7C0E20202E72004799EA /* GroupsHeader.swift */; };
 		D1BF7C13202044BB004799EA /* TableHeaderView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF7C12202044BB004799EA /* TableHeaderView+AutoLayout.swift */; };
@@ -70,6 +71,7 @@
 		D16B57DF20245145007C0B16 /* LectorsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorsHeader.swift; sourceTree = "<group>"; };
 		D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorsViewController.swift; sourceTree = "<group>"; };
 		D16B57E3202AEF76007C0B16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D19E1F6C2035951F00260AED /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D1BF7C06201F2ADD004799EA /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		D1BF7C0E20202E72004799EA /* GroupsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeader.swift; sourceTree = "<group>"; };
 		D1BF7C12202044BB004799EA /* TableHeaderView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableHeaderView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				D1DDF3BC201860CE00E27D33 /* RequestsEngine.swift */,
 				D1DDF38D2018604200E27D33 /* MenuViewController.swift */,
 				D1BF7C06201F2ADD004799EA /* Day.swift */,
+				D19E1F6C2035951F00260AED /* Utils.swift */,
 				D1DDF38F2018604200E27D33 /* Main.storyboard */,
 				D1DDF3952018604200E27D33 /* Assets.xcassets */,
 				D1BF7C492020DBD8004799EA /* Objc-Bridge-Header.h */,
@@ -415,6 +418,7 @@
 				D16B57E4202AEF76007C0B16 /* Constants.swift in Sources */,
 				D1DDF38E2018604200E27D33 /* MenuViewController.swift in Sources */,
 				D1BF7C392020DBC4004799EA /* FSCalendarDelegationProxy.m in Sources */,
+				D19E1F6D2035951F00260AED /* Utils.swift in Sources */,
 				D1BF7C1520207232004799EA /* LectureTableViewCell.swift in Sources */,
 				D1DDF3BE201860CF00E27D33 /* RequestsEngine.swift in Sources */,
 				D1BF7C13202044BB004799EA /* TableHeaderView+AutoLayout.swift in Sources */,

@@ -487,33 +487,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заметка на Понедельник, 16.10.2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-59-uP4">
-                                <rect key="frame" x="10" y="74" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-r3-FZQ">
-                                <rect key="frame" x="164" y="637" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5CS-bc-xBn">
+                                <rect key="frame" x="10" y="74" width="355" height="539"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заметка на Понедельник, 16.10.2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-59-uP4">
+                                        <rect key="frame" x="30.5" y="0.0" width="294.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-gx-4IN">
+                                        <rect key="frame" x="6" y="28" width="343" height="469"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-uR-SVa">
+                                        <rect key="frame" x="93" y="509" width="169" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-r3-FZQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                                <state key="normal" title="Сохранить"/>
+                                                <connections>
+                                                    <action selector="okAction:" destination="B5S-Ow-EQi" eventType="touchUpInside" id="DPX-nj-QIn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ6-1a-bhr">
+                                                <rect key="frame" x="111" y="0.0" width="58" height="30"/>
+                                                <state key="normal" title="Удалить"/>
+                                                <connections>
+                                                    <action selector="cancelAction:" destination="B5S-Ow-EQi" eventType="touchUpInside" id="gDE-tT-iHk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gTU-gx-4IN" secondAttribute="trailing" constant="6" id="5ey-eV-hfh"/>
+                                    <constraint firstItem="gTU-gx-4IN" firstAttribute="leading" secondItem="5CS-bc-xBn" secondAttribute="leading" constant="6" id="fa4-2s-gqO"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZKA-59-uP4" firstAttribute="leading" secondItem="0KU-zZ-8c4" secondAttribute="leading" constant="10" id="Ei4-Yc-xTd"/>
-                            <constraint firstItem="ZKA-59-uP4" firstAttribute="top" secondItem="sib-9s-wJE" secondAttribute="top" constant="10" id="j0U-lB-qRM"/>
-                            <constraint firstAttribute="trailing" secondItem="ZKA-59-uP4" secondAttribute="trailing" constant="10" id="vmO-7G-qAL"/>
+                            <constraint firstItem="5CS-bc-xBn" firstAttribute="top" secondItem="sib-9s-wJE" secondAttribute="top" constant="10" id="0Bw-dp-N05"/>
+                            <constraint firstItem="5CS-bc-xBn" firstAttribute="leading" secondItem="0KU-zZ-8c4" secondAttribute="leading" constant="10" id="Ca5-Vq-Zjq"/>
+                            <constraint firstItem="sib-9s-wJE" firstAttribute="bottom" secondItem="5CS-bc-xBn" secondAttribute="bottom" constant="10" id="quM-8a-5h1"/>
+                            <constraint firstItem="sib-9s-wJE" firstAttribute="trailing" secondItem="5CS-bc-xBn" secondAttribute="trailing" constant="10" id="xox-g9-27T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sib-9s-wJE"/>
                     </view>
                     <connections>
                         <outlet property="noteCaptionLabel" destination="ZKA-59-uP4" id="tbU-Of-Nt8"/>
+                        <outlet property="noteTextView" destination="gTU-gx-4IN" id="tXV-Mj-hMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DO7-mX-dfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-663" y="1706"/>
+            <point key="canvasLocation" x="-663.20000000000005" y="1705.9970014992505"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="M0a-m0-Af3">
@@ -726,6 +758,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h4Q-nK-Jmy"/>
-        <segue reference="MOc-kX-EpA"/>
+        <segue reference="Lq6-ka-Dcl"/>
     </inferredMetricsTieBreakers>
 </document>

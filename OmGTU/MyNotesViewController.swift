@@ -73,5 +73,6 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
 
     // MARK: - Navigation
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        print("unwind")
     }
 }
