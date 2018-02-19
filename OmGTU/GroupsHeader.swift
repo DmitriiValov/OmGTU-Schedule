@@ -66,8 +66,16 @@ class GroupsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         if let _currentDateFrom = UserDefaults.standard.string(forKey: UserDefaultsKeys.currDateFrom.rawValue) {
             currentDateFrom = _currentDateFrom
         }
+        else {
+            currentDateFrom = Utils.getDates(for: Date()).from
+            UserDefaults.standard.set(currentDateFrom, forKey: UserDefaultsKeys.currDateFrom.rawValue)
+        }
         if let _currentDateTo = UserDefaults.standard.string(forKey: UserDefaultsKeys.currDateTo.rawValue) {
             currentDateTo = _currentDateTo
+        }
+        else {
+            currentDateTo = Utils.getDates(for: Date()).to
+            UserDefaults.standard.set(currentDateTo, forKey: UserDefaultsKeys.currDateTo.rawValue)
         }
         datesLabel.text = currentDateFrom + " - " + currentDateTo
 

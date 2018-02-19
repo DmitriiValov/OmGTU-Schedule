@@ -12,6 +12,8 @@
 		D16B57E22029BB6C007C0B16 /* LectorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */; };
 		D16B57E4202AEF76007C0B16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B57E3202AEF76007C0B16 /* Constants.swift */; };
 		D19E1F6D2035951F00260AED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1F6C2035951F00260AED /* Utils.swift */; };
+		D19E1F902036E55900260AED /* OmGTUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3AE2018604200E27D33 /* OmGTUUITests.swift */; };
+		D19E1F9C2036E56800260AED /* OmGTUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3AE2018604200E27D33 /* OmGTUUITests.swift */; };
 		D1BF7C07201F2ADD004799EA /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF7C06201F2ADD004799EA /* Day.swift */; };
 		D1BF7C0F20202E72004799EA /* GroupsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF7C0E20202E72004799EA /* GroupsHeader.swift */; };
 		D1BF7C13202044BB004799EA /* TableHeaderView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF7C12202044BB004799EA /* TableHeaderView+AutoLayout.swift */; };
@@ -50,6 +52,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D19E1F8E2036E55900260AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1DDF3802018604200E27D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1DDF3872018604200E27D33;
+			remoteInfo = OmGTU;
+		};
+		D19E1F9A2036E56800260AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1DDF3802018604200E27D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1DDF3872018604200E27D33;
+			remoteInfo = OmGTU;
+		};
 		D1DDF3A02018604200E27D33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1DDF3802018604200E27D33 /* Project object */;
@@ -72,6 +88,8 @@
 		D16B57E12029BB6C007C0B16 /* LectorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorsViewController.swift; sourceTree = "<group>"; };
 		D16B57E3202AEF76007C0B16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D19E1F6C2035951F00260AED /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D19E1F962036E55900260AED /* OmGTUUITests_2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmGTUUITests_2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19E1FA22036E56800260AED /* OmGTUUITests_3.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmGTUUITests_3.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BF7C06201F2ADD004799EA /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		D1BF7C0E20202E72004799EA /* GroupsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeader.swift; sourceTree = "<group>"; };
 		D1BF7C12202044BB004799EA /* TableHeaderView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableHeaderView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -122,7 +140,7 @@
 		D1DDF39F2018604200E27D33 /* OmGTUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmGTUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DDF3A32018604200E27D33 /* OmGTUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmGTUTests.swift; sourceTree = "<group>"; };
 		D1DDF3A52018604200E27D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1DDF3AA2018604200E27D33 /* OmGTUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmGTUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DDF3AA2018604200E27D33 /* OmGTUUITests_1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmGTUUITests_1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DDF3AE2018604200E27D33 /* OmGTUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmGTUUITests.swift; sourceTree = "<group>"; };
 		D1DDF3B02018604200E27D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DDF3BC201860CE00E27D33 /* RequestsEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsEngine.swift; sourceTree = "<group>"; };
@@ -133,6 +151,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D19E1F912036E55900260AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19E1F9D2036E56800260AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1DDF3852018604200E27D33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,7 +245,9 @@
 			children = (
 				D1DDF3882018604200E27D33 /* OmGTU.app */,
 				D1DDF39F2018604200E27D33 /* OmGTUTests.xctest */,
-				D1DDF3AA2018604200E27D33 /* OmGTUUITests.xctest */,
+				D1DDF3AA2018604200E27D33 /* OmGTUUITests_1.xctest */,
+				D19E1F962036E55900260AED /* OmGTUUITests_2.xctest */,
+				D19E1FA22036E56800260AED /* OmGTUUITests_3.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +311,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D19E1F8C2036E55900260AED /* OmGTUUITests_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19E1F932036E55900260AED /* Build configuration list for PBXNativeTarget "OmGTUUITests_2" */;
+			buildPhases = (
+				D19E1F8F2036E55900260AED /* Sources */,
+				D19E1F912036E55900260AED /* Frameworks */,
+				D19E1F922036E55900260AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19E1F8D2036E55900260AED /* PBXTargetDependency */,
+			);
+			name = OmGTUUITests_2;
+			productName = OmGTUUITests;
+			productReference = D19E1F962036E55900260AED /* OmGTUUITests_2.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D19E1F982036E56800260AED /* OmGTUUITests_3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19E1F9F2036E56800260AED /* Build configuration list for PBXNativeTarget "OmGTUUITests_3" */;
+			buildPhases = (
+				D19E1F9B2036E56800260AED /* Sources */,
+				D19E1F9D2036E56800260AED /* Frameworks */,
+				D19E1F9E2036E56800260AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19E1F992036E56800260AED /* PBXTargetDependency */,
+			);
+			name = OmGTUUITests_3;
+			productName = OmGTUUITests;
+			productReference = D19E1FA22036E56800260AED /* OmGTUUITests_3.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D1DDF3872018604200E27D33 /* OmGTU */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1DDF3B32018604200E27D33 /* Build configuration list for PBXNativeTarget "OmGTU" */;
@@ -312,9 +382,9 @@
 			productReference = D1DDF39F2018604200E27D33 /* OmGTUTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D1DDF3A92018604200E27D33 /* OmGTUUITests */ = {
+		D1DDF3A92018604200E27D33 /* OmGTUUITests_1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1DDF3B92018604200E27D33 /* Build configuration list for PBXNativeTarget "OmGTUUITests" */;
+			buildConfigurationList = D1DDF3B92018604200E27D33 /* Build configuration list for PBXNativeTarget "OmGTUUITests_1" */;
 			buildPhases = (
 				D1DDF3A62018604200E27D33 /* Sources */,
 				D1DDF3A72018604200E27D33 /* Frameworks */,
@@ -325,9 +395,9 @@
 			dependencies = (
 				D1DDF3AC2018604200E27D33 /* PBXTargetDependency */,
 			);
-			name = OmGTUUITests;
+			name = OmGTUUITests_1;
 			productName = OmGTUUITests;
-			productReference = D1DDF3AA2018604200E27D33 /* OmGTUUITests.xctest */;
+			productReference = D1DDF3AA2018604200E27D33 /* OmGTUUITests_1.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -340,6 +410,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Dmitry Valov";
 				TargetAttributes = {
+					D19E1F8C2036E55900260AED = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1DDF3872018604200E27D33;
+					};
+					D19E1F982036E56800260AED = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1DDF3872018604200E27D33;
+					};
 					D1DDF3872018604200E27D33 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -371,12 +449,28 @@
 			targets = (
 				D1DDF3872018604200E27D33 /* OmGTU */,
 				D1DDF39E2018604200E27D33 /* OmGTUTests */,
-				D1DDF3A92018604200E27D33 /* OmGTUUITests */,
+				D1DDF3A92018604200E27D33 /* OmGTUUITests_1 */,
+				D19E1F8C2036E55900260AED /* OmGTUUITests_2 */,
+				D19E1F982036E56800260AED /* OmGTUUITests_3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D19E1F922036E55900260AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19E1F9E2036E56800260AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1DDF3862018604200E27D33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +499,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D19E1F8F2036E55900260AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19E1F902036E55900260AED /* OmGTUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19E1F9B2036E56800260AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19E1F9C2036E56800260AED /* OmGTUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1DDF3842018604200E27D33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +575,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D19E1F8D2036E55900260AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1DDF3872018604200E27D33 /* OmGTU */;
+			targetProxy = D19E1F8E2036E55900260AED /* PBXContainerItemProxy */;
+		};
+		D19E1F992036E56800260AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1DDF3872018604200E27D33 /* OmGTU */;
+			targetProxy = D19E1F9A2036E56800260AED /* PBXContainerItemProxy */;
+		};
 		D1DDF3A12018604200E27D33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1DDF3872018604200E27D33 /* OmGTU */;
@@ -497,6 +617,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D19E1F942036E55900260AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MC3WYRL49;
+				INFOPLIST_FILE = "OmGTUUITests copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prolev.OmGTUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmGTU;
+			};
+			name = Debug;
+		};
+		D19E1F952036E55900260AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MC3WYRL49;
+				INFOPLIST_FILE = "OmGTUUITests copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prolev.OmGTUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmGTU;
+			};
+			name = Release;
+		};
+		D19E1FA02036E56800260AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MC3WYRL49;
+				INFOPLIST_FILE = "OmGTUUITests_2 copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prolev.OmGTUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmGTU;
+			};
+			name = Debug;
+		};
+		D19E1FA12036E56800260AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MC3WYRL49;
+				INFOPLIST_FILE = "OmGTUUITests_2 copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prolev.OmGTUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmGTU;
+			};
+			name = Release;
+		};
 		D1DDF3B12018604200E27D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -707,6 +891,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D19E1F932036E55900260AED /* Build configuration list for PBXNativeTarget "OmGTUUITests_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19E1F942036E55900260AED /* Debug */,
+				D19E1F952036E55900260AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19E1F9F2036E56800260AED /* Build configuration list for PBXNativeTarget "OmGTUUITests_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19E1FA02036E56800260AED /* Debug */,
+				D19E1FA12036E56800260AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1DDF3832018604200E27D33 /* Build configuration list for PBXProject "OmGTU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -734,7 +936,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1DDF3B92018604200E27D33 /* Build configuration list for PBXNativeTarget "OmGTUUITests" */ = {
+		D1DDF3B92018604200E27D33 /* Build configuration list for PBXNativeTarget "OmGTUUITests_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1DDF3BA2018604200E27D33 /* Debug */,

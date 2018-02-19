@@ -1,0 +1,1 @@
+xcodebuild -project "OmGTU.xcodeproj" -scheme OmGTUUITests_1 -destination 'platform=iOS Simulator,name=iPhone X,OS=11.2' -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' test

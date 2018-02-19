@@ -66,7 +66,9 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
             if let indexPath = tableView.indexPathForSelectedRow {
                 let dictKeys  = Array(self.notes.keys)
                 let enc = segue.destination as! EditNoteViewController
-                enc.captionText = dictKeys[indexPath.row]
+                let key = dictKeys[indexPath.row]
+                enc.captionText = key
+                enc.noteText = notes[key]!
             }
         }
     }

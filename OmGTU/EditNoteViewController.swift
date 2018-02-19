@@ -28,5 +28,6 @@ class EditNoteViewController: UIViewController {
         super.viewDidLoad()
         
         noteCaptionLabel.text = captionText
+        noteTextView.text = noteText
     }
 }

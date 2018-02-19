@@ -28,31 +28,38 @@ class OmGTUUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-
+    func test1() {
+        
         let app = XCUIApplication()
-        app.buttons["ФАКУЛЬТЕТЫ И ГРУППЫ"].tap()
+        app/*@START_MENU_TOKEN@*/.buttons["faculties_button"]/*[[".buttons[\"ФАКУЛЬТЕТЫ И ГРУППЫ\"]",".buttons[\"faculties_button\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables.buttons["Сменить дату"].tap()
+        app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["22"]/*[[".cells.staticTexts[\"22\"]",".staticTexts[\"22\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
-        let element = app.otherElements.containing(.navigationBar, identifier:"OmGTU.GroupsView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
-        element.children(matching: .textField).matching(identifier: "Выберите факультет").element(boundBy: 0).tap()
-        
-        let app2 = app
-        app2/*@START_MENU_TOKEN@*/.pickerWheels["Гуманитарного образования"]/*[[".pickers.pickerWheels[\"Гуманитарного образования\"]",".pickerWheels[\"Гуманитарного образования\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
-        let doneButton = app.toolbars.buttons["Done"]
-        doneButton.tap()
-        element.children(matching: .textField).matching(identifier: "Выберите факультет").element(boundBy: 1).tap()
-        app2/*@START_MENU_TOKEN@*/.pickerWheels["1"]/*[[".pickers.pickerWheels[\"1\"]",".pickerWheels[\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        doneButton.tap()
-        element.children(matching: .textField).matching(identifier: "Выберите факультет").element(boundBy: 2).tap()
-        app.buttons["Выберите дату"].tap()
-        
-        
-//        XCUIApplication()/*@START_MENU_TOKEN@*/.buttons["faculties_button"]/*[[".buttons[\"ФАКУЛЬТЕТЫ И ГРУППЫ\"]",".buttons[\"faculties_button\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
-        
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let navigationBar = app.navigationBars["Расписание групп"]
+        navigationBar.children(matching: .button).element(boundBy: 1).tap()
+        navigationBar.buttons["Расписание"].tap()
     }
     
+    func test2() {
+        
+        let app = XCUIApplication()
+        app.buttons["ПРЕПОДАВАТЕЛИ"].tap()
+        
+        let tablesQuery = app.tables
+        tablesQuery.buttons["Сменить дату"].tap()
+        
+        app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["22"]/*[[".cells.staticTexts[\"22\"]",".staticTexts[\"22\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery.textFields["Выберите первую букву фамилии"].tap()
+        app/*@START_MENU_TOKEN@*/.pickerWheels["А"]/*[[".pickers.pickerWheels[\"А\"]",".pickerWheels[\"А\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.toolbars.buttons["Done"].tap()
+        app.navigationBars["Расписание преподавателей"].buttons["Расписание"].tap()
+    }
+    
+    func test3() {
+        
+        let app = XCUIApplication()
+        app.buttons["РАСПИСАНИЕ МОЕЙ ГРУППЫ"].tap()
+        app.tables.otherElements["Понедельник, 19.02.2018"].buttons["edit"].tap()
+        app.navigationBars["OmGTU.EditNoteView"].buttons["Мое расписание"].tap()
+    }
 }
