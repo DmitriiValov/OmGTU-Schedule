@@ -40,6 +40,7 @@ class RequestsEngine {
                                 "Энергетический"]
 
     let courses:[Int] = [1,2,3,4,5,6]
+    var notes:Dictionary<String, String> = [:]
     
     private init() { }
     
@@ -56,8 +57,6 @@ class RequestsEngine {
     }
     
     func getLectors(letter: String, completion: @escaping (Array<(Int, String)>?) -> ()) {
-//    http://www.omgtu.ru/students/temp/ajax.php?action=get_lecturers&letter=%C4
-//        let _letter = "%C4"
         let _letter = letter.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
         let urlString = baseURL + lectorsURL + _letter!
         if let url = URL(string: urlString) {
@@ -265,5 +264,25 @@ class RequestsEngine {
             }
         }
         return days
+    }
+    
+    func getNotes() -> Dictionary<String, String> {
+        return notes
+    }
+    
+    func addNote(note: String, forKey key: String) -> String? {
+        return notes.updateValue(note, forKey: key)
+    }
+    
+    func removeNote(forKey key: String) -> String? {
+        return notes.removeValue(forKey: key)
+    }
+    
+    func saveNotes() {
+        
+    }
+    
+    func loadNotes() {
+        
     }
 }
