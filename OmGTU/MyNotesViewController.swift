@@ -13,7 +13,7 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var tableView: UITableView!
     
     var notes:Dictionary<String, String> = ["Понедельник, 15 января":"1", "Понедельник, 16 января":"2", "Понедельник, 17 января":"3"]
-    let SectionHeaderHeight: CGFloat = 25
+    let SectionHeaderHeight: CGFloat = 30
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,6 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         performSegue(withIdentifier: "EditNoteSegue", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }

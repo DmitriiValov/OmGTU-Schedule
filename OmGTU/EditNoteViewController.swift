@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditNoteViewController: UIViewController {
+class EditNoteViewController: UIViewController, UITextViewDelegate {
    
     @IBOutlet weak var noteCaptionLabel: UILabel!
     @IBOutlet weak var noteTextView: UITextView!
@@ -23,11 +23,38 @@ class EditNoteViewController: UIViewController {
     
     var captionText:String = ""
     var noteText:String = ""
+    let placeholder:String = "Введите текст заметки..."
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         noteCaptionLabel.text = captionText
         noteTextView.text = noteText
+        
+        noteTextView.delegate = self
+        if noteText == "" {
+            noteTextView.text = placeholder
+            noteTextView.textColor = .lightGray
+        }
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) 
+    {
+        if (textView.text == placeholder)
+        {
+            textView.text = ""
+            textView.textColor = .black
+        }
+        textView.becomeFirstResponder() //Optional
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView)
+    {
+        if (textView.text == "")
+        {
+            textView.text = placeholder
+            textView.textColor = .lightGray
+        }
+        textView.resignFirstResponder()
     }
 }

@@ -14,6 +14,8 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
     
     var days:Array<Day> = []
     let SectionHeaderHeight: CGFloat = 25
+    
+    var currDay = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,10 +76,25 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     @objc func addNote(sender: UIButton!) {
-        print("test " + String(sender.tag))
+        currDay = sender.tag
         performSegue(withIdentifier: "addNoteSegue", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addNoteSegue" {
+            let exist = false
+            if exist {
+                
+            }
+            else {
+                let enc = segue.destination as! EditNoteViewController
+                let caption = self.days[currDay].dayTitle
+                enc.captionText = caption
+                enc.noteText = ""
+            }
+        }
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.days[section].dayLessons.count
     }
