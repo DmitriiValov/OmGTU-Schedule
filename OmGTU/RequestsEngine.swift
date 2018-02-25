@@ -42,7 +42,9 @@ class RequestsEngine {
     let courses:[Int] = [1,2,3,4,5,6]
     var notes:Dictionary<String, String> = [:]
     
-    private init() { }
+    private init() {
+        loadNotes()
+    }
     
     static let shared = RequestsEngine()
     
@@ -270,19 +272,29 @@ class RequestsEngine {
         return notes
     }
     
+    func getNote(forKey key: String) -> String? {
+        return notes[key]
+    }
+    
     func addNote(note: String, forKey key: String) -> String? {
-        return notes.updateValue(note, forKey: key)
+        let result = notes.updateValue(note, forKey: key)
+        saveNotes()
+        return result
     }
     
     func removeNote(forKey key: String) -> String? {
-        return notes.removeValue(forKey: key)
+        let result = notes.removeValue(forKey: key)
+        saveNotes()
+        return result
     }
     
     func saveNotes() {
-        
+        UserDefaults.standard.set(notes, forKey: UserDefaultsKeys.myNotes.rawValue)
     }
     
     func loadNotes() {
-        
+        if let _notes:Dictionary<String, String> = UserDefaults.standard.dictionary(forKey: UserDefaultsKeys.myNotes.rawValue) as? Dictionary<String, String> {
+            notes = _notes
+        }
     }
 }

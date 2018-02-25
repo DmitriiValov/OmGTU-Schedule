@@ -19,4 +19,5 @@ enum UserDefaultsKeys : String {
     case currLector
     case currLectorID
     case mySchedule
+    case myNotes
 }
