@@ -14,11 +14,15 @@ class EditNoteViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var noteTextView: UITextView!
     
     @IBAction func okAction(_ sender: UIButton) {
-        print("ok")
+        _ = RequestsEngine.shared.addNote(note: noteTextView.text, forKey: noteCaptionLabel.text!)
+        navigationController?.popViewController(animated: true)
+        //todo
     }
     
     @IBAction func cancelAction(_ sender: UIButton) {
-        print("cancel")
+       _ = RequestsEngine.shared.removeNote(forKey: noteCaptionLabel.text!)
+        navigationController?.popViewController(animated: true)
+        //todo
     }
     
     var captionText:String = ""

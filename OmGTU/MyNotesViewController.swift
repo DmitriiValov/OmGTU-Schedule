@@ -12,7 +12,7 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    var notes:Dictionary<String, String> = ["Понедельник, 15 января":"1", "Понедельник, 16 января":"2", "Понедельник, 17 января":"3"]
+    var notes:Dictionary<String, String> = RequestsEngine.shared.getNotes()
     let SectionHeaderHeight: CGFloat = 30
 
     override func viewDidLoad() {

@@ -161,7 +161,6 @@ class RequestsEngine {
     }
     
     func getSchedule(lector: Int, fromDate: String, toDate: String, completion: @escaping (Array<Day>?) -> ()) {
-        
         if let url = URL(string: baseURL + scheduleURL) {
             var request = URLRequest(url: url)
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
@@ -190,7 +189,6 @@ class RequestsEngine {
             task.resume()
         }
     }
-    
     
     func parseHtml(html: String) -> Array<Day> {
         var _html = html.replacingOccurrences(of: "\r\n", with: "")
