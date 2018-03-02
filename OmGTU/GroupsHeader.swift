@@ -82,15 +82,24 @@ class GroupsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         if let _currentFaculty = UserDefaults.standard.string(forKey: UserDefaultsKeys.currFaculty.rawValue) {
             currentFaculty = _currentFaculty
         }
+        else {
+            currentFaculty = RequestsEngine.shared.getFaculties()[0]
+        }
+        
         if let _currentCourse = UserDefaults.standard.string(forKey: UserDefaultsKeys.currCourse.rawValue) {
             currentCourse = _currentCourse
         }
+        else {
+            currentCourse = "1"
+        }
+        
         if let _currentGroup = UserDefaults.standard.string(forKey: UserDefaultsKeys.currGroup.rawValue) {
             currentGroup = _currentGroup
         }
         if let _currentGroup = UserDefaults.standard.string(forKey: UserDefaultsKeys.currGroup.rawValue) {
             currentGroup = _currentGroup
         }
+        
         currentGroupID = UserDefaults.standard.integer(forKey: UserDefaultsKeys.currGroupID.rawValue)
         
         listOfFaculties.text = currentFaculty

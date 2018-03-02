@@ -62,6 +62,10 @@ class LectorsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         if let _currentLetter = UserDefaults.standard.string(forKey: UserDefaultsKeys.currLetter.rawValue) {
             currentLetter = _currentLetter
         }
+        else {
+            currentLetter = letters[0]
+        }
+        
         if let _currentLector = UserDefaults.standard.string(forKey: UserDefaultsKeys.currLector.rawValue) {
             currentLector = _currentLector
         }

@@ -82,14 +82,14 @@ class MyScheduleViewController: UIViewController, UITableViewDataSource, UITable
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addNoteSegue" {
-            let exist = false
-            if exist {
-                
+            let enc = segue.destination as! EditNoteViewController
+            let caption = self.days[currDay].dayTitle
+            enc.captionText = caption
+
+            if let note = RequestsEngine.shared.getNote(forKey: self.days[currDay].dayTitle) {
+                enc.noteText = note
             }
             else {
-                let enc = segue.destination as! EditNoteViewController
-                let caption = self.days[currDay].dayTitle
-                enc.captionText = caption
                 enc.noteText = ""
             }
         }

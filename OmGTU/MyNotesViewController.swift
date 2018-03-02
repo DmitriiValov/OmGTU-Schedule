@@ -20,18 +20,11 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-//        guard let placesData = UserDefaults.standard.object(forKey: UserDefaultsKeys.mySchedule.rawValue) as? NSData else {
-//            print("'\(UserDefaultsKeys.mySchedule.rawValue)' not found in UserDefaults")
-//            return
-//        }
-//        
-//        guard let _notes = NSKeyedUnarchiver.unarchiveObject(with: placesData as Data) as? [String] else {
-//            print("Could not unarchive from placesData")
-//            return
-//        }
-//        
-//        notes = _notes
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        notes = RequestsEngine.shared.getNotes()
+        tableView.reloadData()
     }
     
     //MARK: UITableViewDataSource    
@@ -40,7 +33,6 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     @objc func addNote(sender: UIButton!) {
-        print("test " + String(sender.tag))
         performSegue(withIdentifier: "addNoteSegue", sender: nil)
     }
     
@@ -74,6 +66,5 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
 
     // MARK: - Navigation
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        print("unwind")
     }
 }
