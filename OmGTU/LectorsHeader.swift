@@ -124,7 +124,7 @@ class LectorsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         toolBarLetters = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 40))
         let doneButton1 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed(sender:)))
         doneButton1.tag = lettersTag
-        let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/3, height: 40))
+        let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/2, height: 40))
         label1.text = "Выберите букву"
         let labelButton1 = UIBarButtonItem(customView:label1)
         let flexibleSpace1 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -133,7 +133,7 @@ class LectorsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         toolBarLectors = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 40))
         let doneButton2 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed(sender:)))
         doneButton2.tag = lectorsTag
-        let label2 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/3, height: 40))
+        let label2 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/2, height: 40))
         label2.text = "Выберите преподавателя"
         let labelButton2 = UIBarButtonItem(customView:label2)
         let flexibleSpace2 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)

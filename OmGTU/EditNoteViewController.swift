@@ -12,6 +12,7 @@ class EditNoteViewController: UIViewController, UITextViewDelegate {
    
     @IBOutlet weak var noteCaptionLabel: UILabel!
     @IBOutlet weak var noteTextView: UITextView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     @IBAction func okAction(_ sender: UIButton) {
         _ = RequestsEngine.shared.addNote(note: noteTextView.text, forKey: noteCaptionLabel.text!)
@@ -32,6 +33,9 @@ class EditNoteViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
         noteCaptionLabel.text = captionText
         noteTextView.text = noteText
         
@@ -42,6 +46,10 @@ class EditNoteViewController: UIViewController, UITextViewDelegate {
         }
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func textViewDidBeginEditing(_ textView: UITextView) 
     {
         if (textView.text == placeholder)
@@ -49,7 +57,7 @@ class EditNoteViewController: UIViewController, UITextViewDelegate {
             textView.text = ""
             textView.textColor = .black
         }
-        textView.becomeFirstResponder() //Optional
+        textView.becomeFirstResponder()
     }
     
     func textViewDidEndEditing(_ textView: UITextView)
@@ -60,5 +68,15 @@ class EditNoteViewController: UIViewController, UITextViewDelegate {
             textView.textColor = .lightGray
         }
         textView.resignFirstResponder()
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            bottomConstraint.constant = 10 + keyboardSize.height
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        bottomConstraint.constant = 10
     }
 }

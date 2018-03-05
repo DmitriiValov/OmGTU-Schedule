@@ -17,9 +17,17 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         if days.count > 0 {
             let placesData = NSKeyedArchiver.archivedData(withRootObject: days)
             UserDefaults.standard.set(placesData, forKey: UserDefaultsKeys.mySchedule.rawValue)
+            
+            let alertController = UIAlertController(title: "Расписание сохранено", message: "", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
         }
         else {
-            
+            let alertController = UIAlertController(title: "Ошибка!", message: "Нет данных для сохранения", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
     

@@ -163,7 +163,7 @@ class GroupsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         toolBarFaculty = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 40))
         let doneButton1 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed(sender:)))
         doneButton1.tag = facultiesTag
-        let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/3, height: 40))
+        let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/2, height: 40))
         label1.text = "Выберите факультет"
         let labelButton1 = UIBarButtonItem(customView:label1)
         let flexibleSpace1 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -172,7 +172,7 @@ class GroupsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         toolBarCourse = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 40))
         let doneButton2 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed(sender:)))
         doneButton2.tag = courcesTag
-        let label2 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/3, height: 40))
+        let label2 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/2, height: 40))
         label2.text = "Выберите курс"
         let labelButton2 = UIBarButtonItem(customView:label2)
         let flexibleSpace2 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -181,7 +181,7 @@ class GroupsHeader: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         toolBarGroup = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 40))
         let doneButton3 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed(sender:)))
         doneButton3.tag = groupsTag
-        let label3 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/3, height: 40))
+        let label3 = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width/2, height: 40))
         label3.text = "Выберите группу"
         let labelButton3 = UIBarButtonItem(customView:label3)
         let flexibleSpace3 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyNotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class MyNotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -50,6 +50,20 @@ class MyNotesViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "EditNoteSegue", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .default, title: "Удалить") { (action, indexPath) in
+            let dictKeys  = Array(self.notes.keys)
+            let key = dictKeys[indexPath.row]
+            let _ = RequestsEngine.shared.removeNote(forKey: key)
+            self.notes.removeValue(forKey: key)
+            self.tableView.reloadData()
+        }
+        
+        delete.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        return [delete]
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
