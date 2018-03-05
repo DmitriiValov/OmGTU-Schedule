@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iOa-aw-l6g">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,14 +16,14 @@
             <objects>
                 <viewController title="Расписание" id="BYZ-38-t0r" customClass="MenuViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="100" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f8M-47-LnF">
-                                <rect key="frame" x="30" y="263" width="315" height="180.5"/>
+                                <rect key="frame" x="30" y="263" width="354" height="180.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РАСПИСАНИЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIO-EX-7Kk">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -32,7 +32,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5U-co-znf">
-                                        <rect key="frame" x="0.0" y="30.5" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="30.333333333333314" width="354" height="30"/>
                                         <color key="backgroundColor" red="0.0013271663337945938" green="0.3275567889213562" blue="0.57669931650161743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="facultiesButton"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -50,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5J-x0-Kqi">
-                                        <rect key="frame" x="0.0" y="70.5" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="70.333333333333314" width="354" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="ПРЕПОДАВАТЕЛИ">
@@ -64,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NG-6A-XIf">
-                                        <rect key="frame" x="0.0" y="110.5" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="110.33333333333331" width="354" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="РАСПИСАНИЕ МОЕЙ ГРУППЫ">
@@ -78,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qju-I6-gef">
-                                        <rect key="frame" x="0.0" y="150.5" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="150.33333333333331" width="354" height="30"/>
                                         <color key="backgroundColor" red="0.0013271663337945938" green="0.3275567889213562" blue="0.57669931650161743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="МОИ ЗАМЕТКИ">
@@ -95,7 +95,7 @@
                                 <variation key="widthClass=regular" spacing="20"/>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omgtu_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Pe-Bb-meT">
-                                <rect key="frame" x="119.5" y="114" width="136" height="114"/>
+                                <rect key="frame" x="139.66666666666666" y="114" width="135.99999999999997" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="5NT-7w-YqJ">
                                         <variation key="widthClass=regular" constant="272"/>
@@ -105,22 +105,45 @@
                                     </constraint>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-Pf-F7P">
+                                <rect key="frame" x="348" y="680" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="MtW-GS-Z3C"/>
+                                    <constraint firstAttribute="height" constant="46" id="U9C-x6-fqj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="LogoKomnata"/>
+                                <connections>
+                                    <action selector="openSiteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebK-65-coU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzU-Yv-TKv">
+                                <rect key="frame" x="224" y="690.66666666666663" width="114" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.32757011060000002" blue="0.57671862839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wLS-Pf-F7P" firstAttribute="leading" secondItem="xzU-Yv-TKv" secondAttribute="trailing" constant="10" id="0mx-iW-alW"/>
                             <constraint firstItem="f8M-47-LnF" firstAttribute="top" secondItem="2Pe-Bb-meT" secondAttribute="bottom" constant="35" id="8Ps-XM-jRP">
                                 <variation key="widthClass=regular" constant="80"/>
                             </constraint>
                             <constraint firstItem="2Pe-Bb-meT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CTt-qU-ScC">
                                 <variation key="widthClass=regular" constant="162"/>
                             </constraint>
+                            <constraint firstItem="xzU-Yv-TKv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="I2z-S7-x9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wLS-Pf-F7P" secondAttribute="bottom" constant="10" id="OZ2-vc-yyL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f8M-47-LnF" secondAttribute="trailing" constant="30" id="SS7-SA-1Y3">
                                 <variation key="widthClass=compact" constant="30"/>
                                 <variation key="widthClass=regular" constant="140"/>
                             </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xzU-Yv-TKv" secondAttribute="bottom" constant="25" id="d0y-tN-ck7"/>
                             <constraint firstItem="f8M-47-LnF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gRD-Zf-345">
                                 <variation key="widthClass=regular" constant="140"/>
                             </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wLS-Pf-F7P" secondAttribute="trailing" constant="20" id="va8-LA-CLd"/>
                             <constraint firstItem="2Pe-Bb-meT" firstAttribute="centerX" secondItem="f8M-47-LnF" secondAttribute="centerX" id="xfe-WE-kPh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -131,28 +154,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-570" y="131"/>
+            <point key="canvasLocation" x="-571.01449275362324" y="130.43478260869566"/>
         </scene>
         <!--Расписание групп-->
         <scene sceneID="3qu-Ke-yw6">
             <objects>
                 <viewController title="Расписание групп" id="PeL-PF-RYJ" customClass="GroupsViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LZK-PH-wtF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Fo-AI-Ljj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleAspectFit" id="sMo-ta-Gkb" customClass="GroupsHeader" customModule="OmGTU" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4mN-eS-qGo">
                                             <rect key="frame" x="10" y="6" width="355" height="194"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-xE-CQd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="47.666666666666664"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="01.01.2018 - 07.01.2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIa-Ct-Syq">
                                                             <rect key="frame" x="0.0" y="0.0" width="355" height="18"/>
@@ -161,7 +184,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-A9-ct3">
-                                                            <rect key="frame" x="0.0" y="18" width="355" height="30"/>
+                                                            <rect key="frame" x="0.0" y="18" width="355" height="29.666666666666671"/>
                                                             <state key="normal" title="Сменить дату"/>
                                                             <connections>
                                                                 <action selector="selectDate:" destination="sMo-ta-Gkb" eventType="touchUpInside" id="Rjh-7y-2zx"/>
@@ -171,16 +194,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iF0-fc-zMR">
-                                                    <rect key="frame" x="0.0" y="49" width="355" height="47.5"/>
+                                                    <rect key="frame" x="0.0" y="48.666666666666657" width="355" height="48"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Факультет:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G26-Cn-tvA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="17.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите факультет" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axx-2P-ZWP">
-                                                            <rect key="frame" x="0.0" y="17.5" width="355" height="30"/>
+                                                            <rect key="frame" x="0.0" y="18.000000000000007" width="355" height="30"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -188,7 +211,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h1i-6x-QqE">
-                                                    <rect key="frame" x="0.0" y="97.5" width="355" height="48"/>
+                                                    <rect key="frame" x="0.0" y="97.666666666666671" width="355" height="47.666666666666671"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Курс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="489-ac-in9">
                                                             <rect key="frame" x="0.0" y="0.0" width="355" height="18"/>
@@ -197,7 +220,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите курс" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tF4-Ra-srH">
-                                                            <rect key="frame" x="0.0" y="18" width="355" height="30"/>
+                                                            <rect key="frame" x="0.0" y="18" width="355" height="29.666666666666671"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -205,16 +228,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-Qf-fiN">
-                                                    <rect key="frame" x="0.0" y="146.5" width="355" height="47.5"/>
+                                                    <rect key="frame" x="0.0" y="146.33333333333334" width="355" height="47.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Группа:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0T-2R-oen">
-                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="17.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="17.666666666666668"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите группу" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O1N-F6-PAT">
-                                                            <rect key="frame" x="0.0" y="17.5" width="355" height="30"/>
+                                                            <rect key="frame" x="0.0" y="17.666666666666657" width="355" height="30"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -250,14 +273,14 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" rowHeight="76" id="oBi-Na-o0q" customClass="LectureTableViewCell" customModule="OmGTU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="236" width="375" height="76"/>
+                                        <rect key="frame" x="0.0" y="236" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oBi-Na-o0q" id="d6r-eO-mAl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="rzc-nF-SiF">
-                                                    <rect key="frame" x="15" y="11" width="345" height="54"/>
+                                                    <rect key="frame" x="15" y="11" width="384" height="54"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="13:45 - 14:30" textAlignment="center" lineBreakMode="wordWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fua-Sf-EgF">
                                                             <rect key="frame" x="0.0" y="0.0" width="82" height="54"/>
@@ -269,7 +292,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-oA-4GD">
-                                                            <rect key="frame" x="88" y="0.0" width="257" height="54"/>
+                                                            <rect key="frame" x="88" y="0.0" width="296" height="54"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -325,14 +348,14 @@
             <objects>
                 <viewController title="Расписание преподавателей" id="58V-5r-cYq" customClass="LectorsViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SV6-xC-k1l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djz-FB-ZmH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleAspectFit" id="b7f-wR-gjr" customClass="LectorsHeader" customModule="OmGTU" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gtb-wV-QYX">
@@ -417,14 +440,14 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" rowHeight="76" id="OWi-sJ-LPq" customClass="LectureTableViewCell" customModule="OmGTU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="179" width="375" height="76"/>
+                                        <rect key="frame" x="0.0" y="179" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OWi-sJ-LPq" id="oEU-FS-9Au">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YEZ-8F-vBq">
-                                                    <rect key="frame" x="15" y="11" width="345" height="54"/>
+                                                    <rect key="frame" x="15" y="11" width="384" height="54"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="13:45 - 14:30" textAlignment="center" lineBreakMode="wordWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BCP-By-erk">
                                                             <rect key="frame" x="0.0" y="0.0" width="82" height="54"/>
@@ -436,7 +459,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="STH-rJ-EfX">
-                                                            <rect key="frame" x="88" y="0.0" width="257" height="54"/>
+                                                            <rect key="frame" x="88" y="0.0" width="296" height="54"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -484,37 +507,37 @@
             <objects>
                 <viewController id="B5S-Ow-EQi" customClass="EditNoteViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0KU-zZ-8c4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5CS-bc-xBn">
-                                <rect key="frame" x="10" y="74" width="355" height="539"/>
+                                <rect key="frame" x="10" y="74" width="394" height="608"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заметка на Понедельник, 16.10.2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-59-uP4">
-                                        <rect key="frame" x="30.5" y="0.0" width="294.5" height="16"/>
+                                        <rect key="frame" x="49.666666666666657" y="0.0" width="294.66666666666674" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-gx-4IN">
-                                        <rect key="frame" x="6" y="28" width="343" height="469"/>
+                                        <rect key="frame" x="6" y="32.333333333333314" width="382" height="469"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-uR-SVa">
-                                        <rect key="frame" x="81" y="509" width="193" height="30"/>
+                                        <rect key="frame" x="100.66666666666669" y="513.33333333333337" width="193" height="94.666666666666629"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-r3-FZQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="94.666666666666671"/>
                                                 <state key="normal" title="Сохранить"/>
                                                 <connections>
                                                     <action selector="okAction:" destination="B5S-Ow-EQi" eventType="touchUpInside" id="DPX-nj-QIn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ6-1a-bhr">
-                                                <rect key="frame" x="111" y="0.0" width="82" height="30"/>
+                                                <rect key="frame" x="111" y="0.0" width="82" height="94.666666666666671"/>
                                                 <state key="normal" title="   Удалить   "/>
                                                 <connections>
                                                     <action selector="cancelAction:" destination="B5S-Ow-EQi" eventType="touchUpInside" id="gDE-tT-iHk"/>
@@ -554,11 +577,11 @@
             <objects>
                 <viewController id="8Dv-SP-Nlg" customClass="CalendarViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P8M-6a-1kD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-9f-g2a" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="64" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="300"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="iGH-qi-euP"/>
@@ -601,7 +624,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iOa-aw-l6g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="64i-nJ-DLs">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -618,22 +641,22 @@
             <objects>
                 <viewController title="Мое расписание" id="2ke-Ja-5lY" customClass="MyScheduleViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gA0-9W-8G4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SlI-ro-S65">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" rowHeight="76" id="cXY-1M-QvI" customClass="LectureTableViewCell" customModule="OmGTU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cXY-1M-QvI" id="34z-qa-YSa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4xG-iu-cxT">
-                                                    <rect key="frame" x="15" y="11" width="345" height="54"/>
+                                                    <rect key="frame" x="15" y="11" width="384" height="54"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="13:45 - 14:30" textAlignment="center" lineBreakMode="wordWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ugx-C8-vJA">
                                                             <rect key="frame" x="0.0" y="0.0" width="82" height="54"/>
@@ -645,7 +668,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Принципы построения программных комплексов" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="di6-h7-OIq">
-                                                            <rect key="frame" x="88" y="0.0" width="257" height="54"/>
+                                                            <rect key="frame" x="88" y="0.0" width="296" height="54"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -693,25 +716,25 @@
             <objects>
                 <viewController title="Мои заметки" id="Pot-MK-bVY" customClass="MyNotesViewController" customModule="OmGTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MCc-0c-w3d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="34" sectionFooterHeight="34" translatesAutoresizingMaskIntoConstraints="NO" id="p0k-PN-mzl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoteCellID" rowHeight="72" id="Ziu-lt-dbd" customClass="NoteTableViewCell" customModule="OmGTU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="34" width="375" height="72"/>
+                                        <rect key="frame" x="0.0" y="34" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ziu-lt-dbd" id="ifQ-2g-ZST">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-Hu-Exs">
-                                                    <rect key="frame" x="15" y="11" width="345" height="50"/>
+                                                    <rect key="frame" x="15" y="11" width="384" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Понедельник, 25 марта" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-hA-PlJ" userLabel="Note Label">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
                                                             <color key="backgroundColor" red="0.0013271663337945938" green="0.3275567889213562" blue="0.57669931650161743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="D5M-pm-5n4"/>
@@ -762,8 +785,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LogoKomnata" width="91" height="95"/>
         <image name="omgtu_logo" width="800" height="757"/>
-        <image name="save" width="40" height="40"/>
+        <image name="save" width="53" height="53"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h4Q-nK-Jmy"/>
