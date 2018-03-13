@@ -42,19 +42,17 @@ class RequestsEngine {
     let courses:[Int] = [1,2,3,4,5,6]
     var notes:Dictionary<String, String> = [:]
     
+    static let shared = RequestsEngine()
+
     private init() {
         loadNotes()
     }
     
-    static let shared = RequestsEngine()
-    
     public func getFaculties() -> Array<String> {
-        
         return faculties
     }
     
     public func getCourses() -> Array<Int> {
-        
         return courses
     }
     
